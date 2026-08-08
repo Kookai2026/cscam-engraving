@@ -3,12 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CSCAM 레이저 잉그레이빙 MLP 1000-5A | 5축 마이크로 레이저 패터닝</title>
+<title>CSCAM - LASER PATTERNING</title>
 <meta name="description" content="레이저 스캐너와 CNC 제어를 완전 결합한 5축 대면적 고정밀 마이크로 패턴 가공기 MLP 1000-5A. 타이어 사이드 몰드 각인 최적화, 단차·이음매 없는 3D 마이크로 텍스처링. — CSCAM 기계사업부">
-<meta property="og:title" content="CSCAM 레이저 잉그레이빙 MLP 1000-5A">
+<meta property="og:title" content="CSCAM - LASER PATTERNING">
 <meta property="og:description" content="레이저 스캐너 + CNC 결합 5축 대면적 마이크로 패턴 가공기. 타이어 몰드 각인 특화.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="images/page1/main.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CSCAM - LASER PATTERNING">
+<meta name="twitter:description" content="레이저 스캐너 + CNC 결합 5축 대면적 마이크로 패턴 가공기. 타이어 몰드 각인 특화.">
+<meta name="twitter:image" content="images/page1/main.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+KR:wght@300;400;500;700;900&amp;family=Space+Grotesk:wght@500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
@@ -31,19 +35,19 @@
   --on-dark-dim:#c3d0e0;
   --radius:12px;
   --section-y:clamp(64px,9vw,112px);
-  --container:1200px;
+  --container:1320px;
   --ff-head:'Space Grotesk','Noto Sans KR',sans-serif;
   --ff-body:'Noto Sans KR','Inter',sans-serif;
   --ff-mono:'JetBrains Mono',monospace;
 }
 *{box-sizing:border-box;margin:0;padding:0;}
-html{scroll-behavior:smooth;}
+html{scroll-behavior:smooth;scrollbar-gutter:stable;}
 body{background:var(--bg);color:var(--text);font-family:var(--ff-body);line-height:1.6;-webkit-font-smoothing:antialiased;}
 img{max-width:100%;display:block;}
 a{color:var(--accent);text-decoration:none;transition:color .2s;}
 a:hover{color:#8fb0d6;}
 button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit;}
-.container{max-width:var(--container);margin:0 auto;padding:0 24px;}
+.container{max-width:var(--container);margin:0 auto;padding:0 32px;}
 .eyebrow{font-family:var(--ff-mono);font-size:11.5px;font-weight:600;color:var(--accent);letter-spacing:.22em;text-transform:uppercase;display:inline-block;margin-bottom:14px;}
 .h2{font-family:var(--ff-head);font-weight:800;font-size:clamp(28px,4.4vw,46px);color:#fff;letter-spacing:-.02em;line-height:1.15;}
 .h3{font-family:var(--ff-head);font-weight:700;font-size:clamp(21px,2.6vw,26px);color:#fff;letter-spacing:-.01em;line-height:1.4;}
@@ -63,9 +67,9 @@ section{padding:var(--section-y) 0;position:relative;}
 @keyframes heroIn{to{opacity:1;transform:translateY(0);}}
 
 /* header */
-header{position:fixed;top:0;left:0;width:100%;background:rgba(9,14,23,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-soft);z-index:900;}
+header{position:fixed;top:0;left:0;right:0;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid #e2e6ec;z-index:900;}
 .family-bar{background:#05080d;border-bottom:1px solid rgba(255,255,255,.06);}
-.family-bar-inner{max-width:var(--container);margin:0 auto;padding:0 24px;height:32px;display:flex;align-items:center;justify-content:flex-end;gap:2px;overflow-x:auto;scrollbar-width:none;}
+.family-bar-inner{max-width:var(--container);margin:0 auto;padding:0 32px;height:32px;display:flex;align-items:center;justify-content:flex-end;gap:2px;overflow-x:auto;scrollbar-width:none;}
 .family-bar-inner::-webkit-scrollbar{display:none;}
 .family-bar-label{font-family:var(--ff-mono);font-size:9.5px;font-weight:700;letter-spacing:.14em;color:#4a5c78;margin-right:auto;white-space:nowrap;}
 .family-bar-nav{display:flex;gap:2px;white-space:nowrap;}
@@ -73,15 +77,16 @@ header{position:fixed;top:0;left:0;width:100%;background:rgba(9,14,23,.86);backd
 .family-bar-nav a:hover{color:#fff;background:rgba(255,255,255,.06);}
 .family-bar-nav a.active{color:#fff;background:var(--main);}
 .family-bar-nav span.disabled{color:#3a4556;cursor:not-allowed;}
-header .bar{max-width:var(--container);height:68px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;}
-.logo{font-family:var(--ff-head);font-weight:800;font-size:19px;letter-spacing:.06em;color:#fff;display:flex;align-items:center;gap:8px;}
+header .bar{max-width:var(--container);height:68px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;}
+.logo{font-family:var(--ff-head);font-weight:800;font-size:19px;letter-spacing:.06em;color:#212121;display:flex;align-items:center;gap:8px;}
 .logo span{font-size:11.5px;font-weight:500;color:var(--accent);letter-spacing:0;}
-.desktop-nav{display:none;align-items:center;gap:30px;}
-.desktop-nav a{font-size:13.5px;font-weight:500;color:#cbd5e1;}
+.desktop-nav{display:none;align-items:center;gap:28px;}
+.desktop-nav a{font-size:14px;font-weight:600;color:#212121;padding:4px 0;border-bottom:2px solid transparent;transition:all .2s;}
+.desktop-nav a:hover{color:var(--accent);border-bottom-color:var(--accent);}
 .desktop-nav a.cta-link{font-weight:700;color:var(--accent);}
 .nav-cta{display:none;background:var(--main);color:#fff;padding:9px 20px;font-size:13px;font-weight:700;border-radius:5px;box-shadow:var(--glow);}
-.menu-btn{width:42px;height:42px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;background:rgba(255,255,255,.06);border-radius:5px;}
-.menu-btn span{width:18px;height:2px;background:#fff;}
+.menu-btn{width:42px;height:42px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;background:rgba(0,0,0,.04);border-radius:5px;}
+.menu-btn span{width:18px;height:2px;background:#212121;}
 .drawer{position:fixed;top:0;right:-280px;width:280px;height:100%;background:var(--bg);border-left:1px solid var(--line);z-index:950;transition:right .35s cubic-bezier(.16,1,.3,1);padding:116px 26px 26px;display:flex;flex-direction:column;gap:22px;}
 .drawer.open{right:0;}
 .drawer a{font-size:16px;color:var(--text);}
@@ -103,7 +108,8 @@ header .bar{max-width:var(--container);height:68px;margin:0 auto;padding:0 24px;
 .hero-grid{display:grid;gap:40px;align-items:center;position:relative;z-index:1;}
 .hero-copy{max-width:600px;}
 .hero-copy h1{font-family:var(--ff-head);font-weight:800;font-size:clamp(30px,4.4vw,48px);line-height:1.16;letter-spacing:-.03em;margin-bottom:22px;color:#fff;word-break:keep-all;}
-.hero-copy h1 .accent-word{color:var(--accent);}
+.hero-copy h1 .accent-word{color:#5c9df5;}
+#hero .eyebrow{color:#a5c7f7!important;}
 .hero-copy p{font-size:16px;color:var(--on-dark-dim);line-height:1.85;max-width:520px;margin:0 0 32px;}
 .hero-links{display:flex;flex-direction:column;align-items:flex-start;gap:14px;}
 .btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 30px;font-size:14.5px;font-weight:700;border-radius:6px;transition:all .2s;white-space:nowrap;}
@@ -320,6 +326,10 @@ form{display:flex;flex-direction:column;gap:18px;}
   .contact-grid{grid-template-columns:40% 1fr;gap:48px;}
   .form-row{grid-template-columns:1fr 1fr;}
 }
+.contact-main-layout { display: grid; }
+@media (max-width:960px){
+  .contact-main-layout { grid-template-columns: 1fr !important; gap: 30px !important; }
+}
 
 /* footer */
 footer{background:var(--bg-deep);border-top:1px solid var(--line-soft);padding:44px 0 32px;}
@@ -329,7 +339,7 @@ footer{background:var(--bg-deep);border-top:1px solid var(--line-soft);padding:4
 .footer-nav{display:flex;gap:22px;flex-wrap:wrap;font-size:13px;color:var(--text-dim);}
 .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--text-mute);}
 .footer-bottom .addr{font-family:var(--ff-mono);letter-spacing:.03em;}
-.top-btn{position:fixed;right:20px;bottom:20px;z-index:200;width:44px;height:44px;border-radius:50%;background:var(--bg);color:var(--accent);border:1px solid var(--line);display:grid;place-items:center;box-shadow:0 4px 16px rgba(0,0,0,.35);}
+.top-btn{position:fixed;right:36px;bottom:104px;z-index:190;width:44px;height:44px;border-radius:50%;background:var(--bg);color:var(--accent);border:1px solid var(--line);display:grid;place-items:center;box-shadow:0 4px 16px rgba(0,0,0,.35);transition:all .3s ease;}
 
 @media (max-width:600px){
   .container{padding:0 18px;}
@@ -357,6 +367,10 @@ footer{background:var(--bg-deep);border-top:1px solid var(--line-soft);padding:4
 @media (max-width: 960px) {
   .family-switcher-header { display: none !important; }
 }
+.header-right-utility { display: flex !important; }
+@media (max-width: 960px) {
+  .header-right-utility { display: none !important; }
+}
 </style>
 </head>
 <body>
@@ -364,18 +378,21 @@ footer{background:var(--bg-deep);border-top:1px solid var(--line-soft);padding:4
 <header>
   <div class="family-bar">
     <div class="family-bar-inner">
-      <span class="family-bar-label">CSCAM GROUP</span>
+      <span class="family-bar-label">CSCAM 기계사업부</span>
       <nav class="family-bar-nav">
-        <a href="../../3dprinter/index.html">3D PRINTER</a>
-        <a href="#hero" class="active">LASER TEXTURING</a>
-        <a href="../marking/index.html">MARKING MACHINE</a>
+        <a href="https://kookai2026.github.io/cscam-3dprinter/sites/3dprinter/">3D PRINTER</a>
+        <a href="#hero" class="active">LASER PATTERNING</a>
+        <a href="https://kookai2026.github.io/cscam-marking/" data-pending-verify="true">MARKING MACHINE</a>
         <span class="disabled">ETC</span>
       </nav>
     </div>
   </div>
   <div class="bar container">
     <div style="display:flex;align-items:center;gap:24px;">
-      <a href="#hero" class="logo">CSCAM <span>기계사업부</span></a>
+      <div>
+        <small style="display:block;font-size:10px;color:#757575;letter-spacing:.04em;margin-bottom:2px;font-weight:500;text-align:left;">씨에스캠주식회사</small>
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;font-style:italic;color:var(--accent);letter-spacing:.01em;">LASER PATTERNING</div>
+      </div>
     </div>
     <nav class="desktop-nav">
       <a href="#hero">홈</a>
@@ -387,7 +404,14 @@ footer{background:var(--bg-deep);border-top:1px solid var(--line-soft);padding:4
       <a href="#download" class="cta-link">자료실</a>
     </nav>
     <div style="display:flex;align-items:center;gap:14px;">
-      <a href="#contact" class="nav-cta">문의하기</a>
+      <!-- CSCAM logo & KR/EN Language Switcher (unified) -->
+      <div class="header-right-utility" style="display:flex;align-items:center;gap:10px;">
+        <div style="display:flex;align-items:baseline;font-family:Verdana,'Noto Sans KR',sans-serif;font-size:23px;color:#1e5aa8;"><span style="font-weight:700;">CS</span><span style="font-weight:400;">CAM</span></div>
+        <div style="width:1px;height:36px;background:#e2e6ec;margin:0 4px;"></div>
+        <div style="display:flex;gap:6px;align-items:center;color:#757575;font-size:11px;font-family:'JetBrains Mono',monospace;letter-spacing:.1em;">
+          <span style="color:#1e5aa8;font-weight:700;">KR</span><span>·</span><span>EN</span>
+        </div>
+      </div>
       <button class="menu-btn" onclick="toggleDrawer()" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -396,9 +420,9 @@ footer{background:var(--bg-deep);border-top:1px solid var(--line-soft);padding:4
 <div class="drawer" id="drawer">
   <!-- Family Site Switcher for Mobile Drawer -->
   <div style="display:flex;flex-wrap:wrap;gap:6px;padding-bottom:20px;margin-bottom:20px;border-bottom:1px solid rgba(255,255,255,0.08);font-size:10.5px;font-weight:700;font-family:var(--ff-mono);">
-    <a href="../../3dprinter/index.html" style="padding:5px 12px;border-radius:12px;color:#94a3b8;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);">3D PRINTER</a>
-    <a href="#hero" onclick="toggleDrawer()" style="padding:5px 12px;border-radius:12px;color:#fff;background:var(--accent);">LASER TEXTURING</a>
-    <a href="../marking/index.html" style="padding:5px 12px;border-radius:12px;color:#94a3b8;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);">MARKING MACHINE</a>
+    <a href="https://kookai2026.github.io/cscam-3dprinter/sites/3dprinter/" style="padding:5px 12px;border-radius:12px;color:#94a3b8;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);">3D PRINTER</a>
+    <a href="#hero" onclick="toggleDrawer()" style="padding:5px 12px;border-radius:12px;color:#fff;background:var(--accent);">LASER PATTERNING</a>
+    <a href="https://kookai2026.github.io/cscam-marking/" data-pending-verify="true" style="padding:5px 12px;border-radius:12px;color:#94a3b8;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);">MARKING MACHINE</a>
     <span style="padding:5px 12px;border-radius:12px;color:#4a5568;">ETC</span>
   </div>
   <a href="#hero" onclick="toggleDrawer()">홈</a>
@@ -427,7 +451,7 @@ footer{background:var(--bg-deep);border-top:1px solid var(--line-soft);padding:4
         </div>
         <div class="hero-stats">
           <div class="stat"><b>5축 동시</b><span>곡면 3D 패터닝</span></div>
-          <div class="stat"><b>Ø1000 mm</b><span>최대 가공 범위</span></div>
+          <div class="stat"><b>Ø1100 mm</b><span>최대 가공 범위</span></div>
           <div class="stat"><b>350 ㎛</b><span>음각 깊이</span></div>
           <div class="stat"><b>50 ㎛</b><span>패턴 간격</span></div>
         </div>
@@ -532,7 +556,7 @@ footer{background:var(--bg-deep);border-top:1px solid var(--line-soft);padding:4
           </div>
           <div class="card subcard accent">
             <h4>마이크로 패턴 가공 (Micro Texturing)</h4>
-            <p>미세 반사각 차단으로 빛을 대폭 흡수하여 어두운 명암 비축을 극대화, 선명한 외곽선 보증.</p>
+            <p>미세 반사각 차단으로 빛을 대폭 흡수하여 어두운 명암 대비를 극대화, 선명한 외곽선 보증.</p>
             <img src="images/page4/4-micro-detail.png" alt="마이크로 패턴 상세" style="width:100%;height:auto;object-fit:cover;border-radius:6px;">
             <div class="pair">
             </div>
@@ -560,59 +584,7 @@ footer{background:var(--bg-deep);border-top:1px solid var(--line-soft);padding:4
 </section>
 
 <!-- SECTION 3b: PRODUCTION RECORD / INSTALLATIONS -->
-<section id="production" class="bg-alt">
-  <div class="container">
-    <div class="section-head center">
-      <span class="eyebrow">Mass Production Record</span>
-      <h2 class="h2">사이드 몰드 텍스처링 양산 진행 실적</h2>
-      <p class="section-sub" style="margin:8px auto 0;">글로벌 타이어 금형 양산 현장에서 검증된 MLP 1000-5A의 가동 안정성</p>
-    </div>
-    
-    <div style="display:grid;grid-template-columns:1fr;gap:24px;margin-top:24px;" class="reveal">
-      <div class="subcards">
-        
-        <!-- Case 1: Gwangju Plant -->
-        <div class="card subcard" style="display:flex;flex-direction:column;justify-content:space-between;padding:28px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--glow);">
-          <div>
-            <span style="font-size:11px;font-weight:700;color:var(--accent);font-family:var(--ff-mono);letter-spacing:.05em;display:block;margin-bottom:6px;">PRODUCTION PLANT 01</span>
-            <h4 style="font-size:18px;font-weight:700;color:var(--main);margin-bottom:10px;border-bottom:1px solid var(--line-soft);padding-bottom:10px;text-transform:none;">전남 광주 소재지 D사 (본사)</h4>
-            <p style="font-size:14px;color:var(--text-dim);line-height:1.6;margin-bottom:20px;">
-              타이어 사이드 플레이트 몰드용 마이크로 텍스처링 전용 양산 라인을 구축했습니다. 24시간 연속 가동 체제에서도 안정적인 대면적 3D 정밀 패턴 가공을 구현하며, 상용 타이어 제품군에 대량 생산 적용되고 있습니다.
-            </p>
-          </div>
-          <div style="width:100%;aspect-ratio:16/9;border-radius:6px;overflow:hidden;border:1px solid var(--line-soft);background:var(--bg-deep);display:flex;justify-content:center;align-items:center;position:relative;">
-            <img src="images/page3/production_gwangju.png" alt="전남 광주 D사 양산 현장" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-            <div style="display:none;flex-direction:column;align-items:center;color:var(--text-mute);font-size:13px;" class="fallback-placeholder">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:8px;opacity:0.6;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
-              <span>전남 광주 D사 양산 가동 사진 부착 프레임</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Case 2: Romania Corp -->
-        <div class="card subcard accent" style="display:flex;flex-direction:column;justify-content:space-between;padding:28px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--glow);">
-          <div>
-            <span style="font-size:11px;font-weight:700;color:var(--accent);font-family:var(--ff-mono);letter-spacing:.05em;display:block;margin-bottom:6px;">PRODUCTION PLANT 02</span>
-            <h4 style="font-size:18px;font-weight:700;color:var(--main);margin-bottom:10px;border-bottom:1px solid var(--line-soft);padding-bottom:10px;text-transform:none;">루마니아 법인 D사 (유럽 생산 기지)</h4>
-            <p style="font-size:14px;color:var(--text-dim);line-height:1.6;margin-bottom:20px;">
-              유럽 시장 공급용 프리미엄 타이어 몰드의 사이드 플레이트 텍스처링을 현지에서 가동 중입니다. 유럽 주요 완성차 브랜드용 몰드 생산 라인의 품질 검증을 통과하여, 정밀 5축 가공 공정으로 상용 양산을 수행하고 있습니다.
-            </p>
-          </div>
-          <div style="width:100%;aspect-ratio:16/9;border-radius:6px;overflow:hidden;border:1px solid var(--line-soft);background:var(--bg-deep);display:flex;justify-content:center;align-items:center;position:relative;">
-            <img src="images/page3/production_romania.png" alt="루마니아 법인 D사 양산 현장" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-            <div style="display:none;flex-direction:column;align-items:center;color:var(--text-mute);font-size:13px;" class="fallback-placeholder">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:8px;opacity:0.6;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
-              <span>루마니아 법인 D사 양산 가동 사진 부착 프레임</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="features">
+<section id="features" class="bg-alt">
   <div class="container">
     <div class="section-head center">
       <span class="eyebrow">Key Advantages</span>
@@ -632,7 +604,7 @@ footer{background:var(--bg-deep);border-top:1px solid var(--line-soft);padding:4
       </div>
       <div class="reveal card hoverable feature-item">
         <div class="feature-num">02</div>
-        <div><h5>대면적 곡면형상에 단차나 이음매 없는 패턴 가공 가능</h5><p>자체 개발 전용 CAM S/W와 정밀 스캐너 최적화 기술로 완벽한 심리스 면 분할 가공을 이룩합니다.</p></div>
+        <div><h5>대면적 곡면형상에 단차나 이음매 없는 패턴 가공 가능</h5><p>자체 개발 전용 CAM S/W와 정밀 스캐너 최적화 기술로 완벽한 심리스 면 분할 가공을 구현합니다.</p></div>
       </div>
       <div class="reveal card hoverable feature-item">
         <div class="feature-num">03</div>
@@ -650,7 +622,7 @@ footer{background:var(--bg-deep);border-top:1px solid var(--line-soft);padding:4
         <tbody>
           <tr><td>제어 구동축</td><td>5Axis Machine (X, Y, Z, B, C)</td></tr>
           <tr><td>가공 제어 모드</td><td>TCP (Tool Center Point) &amp; High Speed Machining Mode</td></tr>
-          <tr><td>최대 가공 크기</td><td>Large Size Working Area (up to Ø1000 mm)</td></tr>
+          <tr><td>최대 가공 크기</td><td>Large Size Working Area (up to Ø1100 mm)</td></tr>
           <tr><td>좌표 세팅</td><td>Auto Height Sensor &amp; Work Coordinate Setting (자동 높이측정 센서)</td></tr>
           <tr><td>환경 배기 집진</td><td>Fume Collector and Blower</td></tr>
           <tr><td>CNC 제어기</td><td>CSCAM 전용 CNC 컨트롤러 (Scanner Control Integration)</td></tr>
@@ -665,7 +637,60 @@ footer{background:var(--bg-deep);border-top:1px solid var(--line-soft);padding:4
   </div>
 </section>
 
-<section id="software">
+<!-- SECTION 3b: PRODUCTION RECORD / INSTALLATIONS -->
+<section id="production">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Mass Production Record</span>
+      <h2 class="h2">사이드 몰드 텍스처링 양산 진행 실적</h2>
+      <p class="section-sub" style="margin:8px auto 0;">글로벌 타이어 금형 양산 현장에서 검증된 MLP 1000-5A의 가동 안정성</p>
+    </div>
+    
+    <div style="display:grid;grid-template-columns:1fr;gap:24px;margin-top:24px;" class="reveal">
+      <div class="subcards">
+        
+        <!-- Case 1: Gwangju Plant -->
+        <div class="card subcard" style="display:flex;flex-direction:column;justify-content:space-between;padding:28px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--glow);">
+          <div>
+            <span style="font-size:11px;font-weight:700;color:var(--accent);font-family:var(--ff-mono);letter-spacing:.05em;display:block;margin-bottom:6px;">DOMESTIC INSTALLATION SITE · GWANGJU</span>
+            <h4 style="font-size:18px;font-weight:700;color:var(--main);margin-bottom:10px;border-bottom:1px solid var(--line-soft);padding-bottom:10px;text-transform:none;">국내 D사</h4>
+            <p style="font-size:14px;color:var(--text-dim);line-height:1.6;margin-bottom:20px;">
+              타이어 사이드 플레이트 몰드용 마이크로 텍스처링 전용 양산 라인을 구축했습니다. 24시간 연속 가동 체제에서도 안정적인 대면적 3D 정밀 패턴 가공을 구현하며, 상용 타이어 제품군에 대량 생산 적용되고 있습니다.
+            </p>
+          </div>
+          <div style="width:100%;aspect-ratio:2.2/1;border-radius:6px;overflow:hidden;border:1px solid var(--line-soft);background:var(--bg-deep);display:flex;justify-content:center;align-items:center;position:relative;">
+            <img src="images/page3/production_gwangju.png" alt="국내 D사 실제 가동 현장 사진" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div style="display:none;flex-direction:column;align-items:center;color:var(--text-mute);font-size:13px;" class="fallback-placeholder">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:8px;opacity:0.6;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+              <span>국내 D사 실제 가동 현장 사진</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 2: Romania Corp -->
+        <div class="card subcard accent" style="display:flex;flex-direction:column;justify-content:space-between;padding:28px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--glow);">
+          <div>
+            <span style="font-size:11px;font-weight:700;color:var(--accent);font-family:var(--ff-mono);letter-spacing:.05em;display:block;margin-bottom:6px;">OVERSEAS PRODUCTION SITE · ROMANIA</span>
+            <h4 style="font-size:18px;font-weight:700;color:var(--main);margin-bottom:10px;border-bottom:1px solid var(--line-soft);padding-bottom:10px;text-transform:none;">유럽 D사</h4>
+            <p style="font-size:14px;color:var(--text-dim);line-height:1.6;margin-bottom:20px;">
+              유럽 시장 공급용 프리미엄 타이어 몰드의 사이드 플레이트 텍스처링을 현지에서 가동 중입니다. 유럽 주요 완성차 브랜드용 몰드 생산 라인의 품질 검증을 통과하여, 정밀 5축 가공 공정으로 상용 양산을 수행하고 있습니다.
+            </p>
+          </div>
+          <div style="width:100%;aspect-ratio:2.2/1;border-radius:6px;overflow:hidden;border:1px solid var(--line-soft);background:var(--bg-deep);display:flex;justify-content:center;align-items:center;position:relative;">
+            <img src="images/page3/production_romania.png" alt="유럽 D사 실제 가동 현장 사진" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div style="display:none;flex-direction:column;align-items:center;color:var(--text-mute);font-size:13px;" class="fallback-placeholder">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:8px;opacity:0.6;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+              <span>유럽 D사 실제 가동 현장 사진</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="software" class="bg-alt">
   <div class="container">
     <div class="section-head center">
       <span class="eyebrow">Proprietary CAM &amp; CNC</span>
@@ -715,7 +740,7 @@ footer{background:var(--bg-deep);border-top:1px solid var(--line-soft);padding:4
   </div>
 </section>
 
-<section id="download" class="bg-alt">
+<section id="download">
   <div class="container">
     <div class="download-grid">
       <div class="reveal">
@@ -737,51 +762,90 @@ footer{background:var(--bg-deep);border-top:1px solid var(--line-soft);padding:4
   </div>
 </section>
 
-<section id="contact">
-  <div class="container">
-    <div class="contact-grid">
-      <div class="reveal">
-        <span class="eyebrow">Get in Touch</span>
-        <h2 class="h2" style="font-size:clamp(24px,3.5vw,36px);margin-bottom:20px;">제품 견적 및 맞춤형<br>가공 솔루션 문의</h2>
-        <p class="body-text" style="margin-bottom:24px;">타이어 사이드 몰드 가공이나 대면적 3D 미세 가공에 관해 문의 사항을 작성해 주시면 기술 영업 담당자가 신속히 답변해 드리겠습니다.</p>
-        <span class="contact-phone-label">대표번호 기술 상담</span>
-        <a href="tel:062-946-1900" class="contact-phone">062-946-1900</a>
+<!-- ============== 07 CONTACT ============== -->
+<section id="contact" style="padding:100px 0;background:#fafbfc;border-top:1px solid var(--line-soft);">
+  <div class="container" data-reveal="1">
+    <div style="margin-bottom:56px;">
+      <div style="white-space:nowrap;display:inline-flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);"><span style="flex-shrink:0;width:24px;height:1px;background:var(--accent);"></span>07 / Contact</div>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(26px,3.4vw,38px);line-height:1.2;letter-spacing:-.02em;margin:12px 0 16px;color:#212121;">제품(견적) 문의처 및 사업부 위치</h2>
+    </div>
+    <div class="contact-main-layout" style="display:grid;grid-template-columns:1fr 1.3fr;gap:60px;align-items:stretch;">
+      <div style="background:#fff;border:1px solid #e2e6ec;border-radius:8px;padding:32px;box-shadow:0 1px 2px rgba(13,71,161,.06);">
+        <div style="padding-bottom:20px;border-bottom:2px solid var(--accent);margin-bottom:20px;">
+          <h3 style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px;color:var(--accent);letter-spacing:-.01em;">기계사업부</h3>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#757575;letter-spacing:.14em;text-transform:uppercase;margin-top:4px;">Customer Center · 고객센터</div>
+        </div>
+        <div style="padding:20px 22px;background:var(--accent);border-radius:6px;color:#fff;margin-bottom:20px;">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#a3d4ff;margin-bottom:4px;">상담 전화</div>
+          <div class="contact-phone" style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:32px;letter-spacing:-.01em;color:#fff;">062 - 946 - 1900</div>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid #e2e6ec;display:grid;grid-template-columns:120px 1fr;gap:16px;">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;color:var(--accent);text-transform:uppercase;">상담 시간</div>
+          <div style="color:#212121;font-size:13px;font-weight:500;">오전 08:30 ~ 오후 05:30</div>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid #e2e6ec;display:grid;grid-template-columns:120px 1fr;gap:16px;">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;color:var(--accent);text-transform:uppercase;">Fax</div>
+          <div style="color:#212121;font-size:13px;font-weight:500;">062 - 946 - 1901</div>
+        </div>
+        <div style="padding:12px 0;">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;color:var(--accent);text-transform:uppercase;">E-mail</div>
+          <div style="color:#212121;font-size:13px;font-weight:500;">info@cscam.co.kr</div>
+        </div>
       </div>
-      <div class="reveal card form-card">
-        <form id="engraving-contact-form">
-          <div class="form-row">
-            <div class="field"><label>회사명</label><input type="text" placeholder="예: CSCAM"></div>
-            <div class="field"><label>담당자 성함</label><input type="text" placeholder="예: 김성철"></div>
-          </div>
-          <div class="field"><label>이메일 주소</label><input type="email" placeholder="example@domain.com"></div>
-          <div class="field">
-            <label>문의 분류</label>
-            <select>
-              <option value="quote">장비 구매 및 견적 문의</option>
-              <option value="tech">기술 가공 협의 및 샘플 요청</option>
-              <option value="demo">데모룸 장비 시연 신청</option>
-              <option value="other">기타 문의</option>
-            </select>
-          </div>
-          <div class="field"><label>상세 문의 내용</label><textarea placeholder="장비 검토 목적이나 가공 사양을 적어주시면 상세한 기술 상담이 가능합니다."></textarea></div>
-          <button type="submit" class="submit-btn">문의 내용 전송하기</button>
-        </form>
+      <div style="border:1px solid #e2e6ec;border-radius:8px;overflow:hidden;position:relative;min-height:340px;">
+        <iframe src="https://www.google.com/maps?q=%EA%B4%91%EC%A3%BC%20%EA%B4%91%EC%82%B0%EA%B5%AC%20%ED%8F%89%EB%8F%99%EC%82%B0%EB%8B%A8%EB%A1%9C%20239-15&output=embed" style="position:absolute;inset:0;width:100%;height:100%;border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="씨에스캠 본사 위치"></iframe>
+        <div style="position:absolute;top:16px;left:16px;z-index:1;background:var(--accent);color:#fff;padding:20px 24px;border-radius:6px;max-width:320px;box-shadow:0 8px 20px rgba(30,58,95,.25);pointer-events:none;">
+          <h4 style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;margin-bottom:6px;">본사 (전남광주특별시)</h4>
+          <p style="font-size:13px;color:#c4d1e6;line-height:1.5;">전남광주특별시 광산구 평동산단로 239-15<br>Tel: 062-946-1900 · Fax: 062-946-1901</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<footer>
-  <div class="container">
-    <div class="footer-top">
-      <div class="footer-logo">CSCAM <span>Machine Division</span></div>
-      <nav class="footer-nav">
-        <a href="#hero">홈</a><a href="#concept">개념</a><a href="#application">적용사례</a><a href="#specifications">사양</a><a href="#contact">문의</a>
-      </nav>
+<!-- FOOTER -->
+<footer style="background:#0d1e3d;color:#8fa3c3;padding:60px 0 30px;border-top:1px solid var(--line-soft);">
+  <div style="max-width:1320px;margin:0 auto;padding:0 32px;">
+    <div class="footer-columns" style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.06);">
+      <div style="color:#c4d1e6;">
+        <div style="font-weight:700;font-size:16px;color:#fff;letter-spacing:.01em;margin-bottom:4px;">씨에스캠주식회사</div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-style:italic;font-size:15px;color:var(--accent);margin-bottom:16px;">LASER PATTERNING</div>
+        <p style="font-size:13px;line-height:1.7;max-width:380px;">레이저 마이크로 패터닝 기술 기반의 5축 초정밀 레이저 미세 가공기(MLP 1000-5A)를 자체 개발·공급합니다.</p>
+      </div>
+      <div>
+        <h6 style="color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:13px;letter-spacing:.05em;margin-bottom:16px;">장비 소개</h6>
+        <ul style="list-style:none;padding:0;margin:0;">
+          <li style="margin-bottom:8px;"><a href="#concept" style="font-size:13px;color:#8fa3c3;text-decoration:none;">개념</a></li>
+          <li style="margin-bottom:8px;"><a href="#application" style="font-size:13px;color:#8fa3c3;text-decoration:none;">적용사례</a></li>
+          <li style="margin-bottom:8px;"><a href="#specifications" style="font-size:13px;color:#8fa3c3;text-decoration:none;">장비사양</a></li>
+          <li style="margin-bottom:8px;"><a href="#production" style="font-size:13px;color:#8fa3c3;text-decoration:none;">양산 진행 실적</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6 style="color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:13px;letter-spacing:.05em;margin-bottom:16px;">소프트웨어</h6>
+        <ul style="list-style:none;padding:0;margin:0;">
+          <li style="margin-bottom:8px;"><a href="#software" style="font-size:13px;color:#8fa3c3;text-decoration:none;">CS_Laser 3D (CAM)</a></li>
+          <li style="margin-bottom:8px;"><a href="#software" style="font-size:13px;color:#8fa3c3;text-decoration:none;">Micro Patterning CNC</a></li>
+        </ul>
+        <h6 style="color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:13px;letter-spacing:.05em;margin:16px 0;">기술자료</h6>
+        <ul style="list-style:none;padding:0;margin:0;">
+          <li style="margin-bottom:8px;"><a href="#concept" style="font-size:13px;color:#8fa3c3;text-decoration:none;">타이어 사이드 몰드</a></li>
+          <li style="margin-bottom:8px;"><a href="#concept" style="font-size:13px;color:#8fa3c3;text-decoration:none;">타이어 트레드 몰드</a></li>
+          <li style="margin-bottom:8px;"><a href="#software" style="font-size:13px;color:#8fa3c3;text-decoration:none;">Software</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6 style="color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:13px;letter-spacing:.05em;margin-bottom:16px;">다운로드</h6>
+        <ul style="list-style:none;padding:0;margin:0;">
+          <li style="margin-bottom:8px;"><a href="#download" style="font-size:13px;color:#8fa3c3;text-decoration:none;">카탈로그 다운로드</a></li>
+          <li style="margin-bottom:8px;"><a href="#download" style="font-size:13px;color:#8fa3c3;text-decoration:none;">CNC/CAM 업데이트</a></li>
+          <li style="margin-bottom:8px;"><a href="#contact" style="font-size:13px;color:#8fa3c3;text-decoration:none;">제품(견적) 문의</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="footer-bottom">
+    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:24px;font-size:12px;color:#6b7a94;flex-wrap:wrap;gap:12px;">
       <div>© 2026 씨에스캠주식회사 (CSCAM Co., Ltd.) — Machine Division. All Rights Reserved.</div>
-      <div class="addr">본사 · 전남광주특별시 광산구 평동산단로 239-15 · 062-946-1900</div>
+      <div style="font-family:'JetBrains Mono',monospace;letter-spacing:.06em;">본사 · 전남광주특별시 광산구 평동산단로 239-15 · 062-946-1900</div>
     </div>
   </div>
 </footer>
@@ -866,5 +930,363 @@ if('IntersectionObserver' in window){
 }
 </script>
 
+<!-- AI Chatbot Floating Widget (원래의 정적 UI 복원 및 대화식 기능 통합) -->
+<style>
+  @keyframes chatPulse {
+    0% { transform: scale(1); opacity: 0.4; }
+    50% { transform: scale(1.15); opacity: 0; }
+    100% { transform: scale(1); opacity: 0; }
+  }
+  @keyframes dots {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+  .loading-dots span {
+    animation: dots 1.4s infinite;
+  }
+  .chatbot-opt-btn {
+    text-align: left;
+    font-size: 12.5px;
+    padding: 10px 14px;
+    border: 1px solid #bbdefb;
+    background: #eaf3fc;
+    color: #1e5aa8;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+    width: 100%;
+    box-shadow: 0 1px 2px rgba(13,71,161,0.05);
+  }
+  .chatbot-opt-btn:hover {
+    background: #dbeaf9;
+    border-color: #90caf9;
+    color: #0d47a1;
+  }
+  .chatbot-opt-btn:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    background: #f1f5f9;
+    border-color: #e2e6ec;
+    color: #94a3b8;
+    box-shadow: none;
+  }
+</style>
+
+<div id="ai-chatbot-widget" style="font-family:'Noto Sans KR',sans-serif;">
+  <!-- Chatbot Floating Button (원래 디자인) -->
+  <button id="chatbot-toggle-btn" type="button" style="position:fixed;right:28px;bottom:28px;z-index:200;width:60px;height:60px;border-radius:50%;background:#1e5aa8;color:#fff;display:grid;place-items:center;box-shadow:0 8px 24px rgba(13,71,161,.35);border:none;cursor:pointer;outline:none;">
+    <span id="chatbot-badge" style="position:absolute;top:-4px;right:-4px;width:18px;height:18px;border-radius:50%;background:#2196f3;color:#fff;font-size:10px;font-weight:700;display:grid;place-items:center;border:2px solid #fff;">1</span>
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+  </button>
+
+  <!-- Chat Window Panel (원래 정적 UI 프레임 복원) -->
+  <div id="chatbot-panel" style="position:fixed;right:28px;bottom:100px;z-index:200;width:340px;max-width:calc(100vw - 40px);height:460px;max-height:calc(100vh - 160px);background:#fff;border:1px solid #e2e6ec;border-radius:12px;box-shadow:0 16px 40px rgba(13,71,161,.15);display:none;flex-direction:column;overflow:hidden;transition:all 0.25s ease;transform:translateY(15px);opacity:0;">
+    <!-- Chat Header -->
+    <div style="background:#1e5aa8;color:#fff;padding:16px 18px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div style="width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.16);display:grid;place-items:center;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+        </div>
+        <div>
+          <h5 style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:14px;margin:0;">CSCAM 문의하기</h5>
+          <span style="display:block;font-size:10px;color:#a3d4ff;font-family:'JetBrains Mono',monospace;letter-spacing:.06em;margin-top:2px;">LASER PATTERNING 상담 챗봇</span>
+        </div>
+      </div>
+      <button id="chatbot-close-btn" type="button" style="width:28px;height:28px;border-radius:50%;display:grid;place-items:center;color:#fff;background:none;border:none;cursor:pointer;outline:none;font-size:13px;">✕</button>
+    </div>
+    
+    <!-- Chat Body Messages -->
+    <div id="chatbot-messages" style="flex:1;overflow-y:auto;padding:18px;background:#fafbfc;display:flex;flex-direction:column;gap:12px;scroll-behavior:smooth;">
+      <!-- Welcome card and dialog steps will be dynamically inserted here -->
+    </div>
+    
+    <!-- Chat Input Form -->
+    <form id="chatbot-input-form" onsubmit="handleChatbotSubmit(event)" style="padding:12px 14px;border-top:1px solid #e2e6ec;background:#fff;display:flex;gap:8px;margin:0;align-items:center;flex-shrink:0;">
+      <input id="chatbot-input-field" type="text" placeholder="메시지를 입력하세요 (준비 중)" disabled style="flex:1;border:1px solid #e2e6ec;border-radius:20px;padding:10px 16px;font-size:13px;outline:none;color:#424242;">
+      <button id="chatbot-submit-btn" type="submit" style="width:38px;height:38px;border-radius:50%;background:#1e5aa8;color:#fff;display:grid;place-items:center;flex-shrink:0;border:none;cursor:pointer;outline:none;" disabled style="opacity:0.6;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+      </button>
+    </form>
+    
+    <!-- Footer -->
+    <div style="padding:6px 14px 10px;font-size:10px;color:#757575;font-family:'JetBrains Mono',monospace;text-align:center;background:#fff;flex-shrink:0;border-top:1px solid #f2f5f9;">POWERED BY CSCAM · AI Q&amp;A LEARNING IN PROGRESS</div>
+  </div>
+</div>
+
+<script>
+(function() {
+  var toggleBtn = document.getElementById('chatbot-toggle-btn');
+  var badge = document.getElementById('chatbot-badge');
+  var panel = document.getElementById('chatbot-panel');
+  var closeBtn = document.getElementById('chatbot-close-btn');
+  var msgArea = document.getElementById('chatbot-messages');
+  var inputField = document.getElementById('chatbot-input-field');
+  var submitBtn = document.getElementById('chatbot-submit-btn');
+  
+  // Conversation state
+  var chatState = {
+    step: 'init', // 'init', 'name', 'contact', 'message', 'complete'
+    category: '',
+    name: '',
+    contact: '',
+    message: ''
+  };
+
+  // Toggle panel
+  toggleBtn.addEventListener('click', function() {
+    badge.style.display = 'none'; // Hide notification badge on first click
+    if (panel.style.display === 'none' || !panel.style.display) {
+      panel.style.display = 'flex';
+      setTimeout(function() {
+        panel.style.transform = 'translateY(0)';
+        panel.style.opacity = '1';
+      }, 10);
+    } else {
+      panel.style.transform = 'translateY(15px)';
+      panel.style.opacity = '0';
+      setTimeout(function() {
+        panel.style.display = 'none';
+      }, 250);
+    }
+  });
+
+  // Close panel
+  closeBtn.addEventListener('click', function() {
+    panel.style.transform = 'translateY(15px)';
+    panel.style.opacity = '0';
+    setTimeout(function() {
+      panel.style.display = 'none';
+    }, 250);
+  });
+
+  // Render Bot message
+  function appendBotMsg(htmlContent) {
+    var html = '<div class="bot-msg-wrapper" style="display:flex;gap:8px;max-width:90%;margin-bottom:12px;">' +
+      '<div style="width:28px;height:28px;border-radius:50%;background:#eaf3fc;color:#1e5aa8;display:grid;place-items:center;flex-shrink:0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:block;"><rect x="3" y="11" width="18" height="10" rx="2"></rect><circle cx="12" cy="5" r="2"></circle><path d="M12 7v4M8 16h.01M16 16h.01"></path></svg></div>' +
+      '<div style="max-width:calc(100% - 36px);padding:10px 14px;border-radius:2px 10px 10px 10px;font-size:13px;line-height:1.5;background:#fff;border:1px solid #e2e6ec;color:#424242;word-break:break-all;">' +
+        htmlContent +
+      '</div>' +
+    '</div>';
+    msgArea.insertAdjacentHTML('beforeend', html);
+    msgArea.scrollTop = msgArea.scrollHeight;
+  }
+
+  // Render User message
+  function appendUserMsg(textContent) {
+    var html = '<div class="user-msg-wrapper" style="display:flex;justify-content:flex-end;width:100%;margin-bottom:12px;">' +
+      '<div style="max-width:80%;padding:10px 14px;border-radius:10px 2px 10px 10px;font-size:13px;line-height:1.5;background:#1e5aa8;color:#fff;word-break:break-all;text-align:left;">' +
+        textContent +
+      '</div>' +
+    '</div>';
+    msgArea.insertAdjacentHTML('beforeend', html);
+    msgArea.scrollTop = msgArea.scrollHeight;
+  }
+
+  // Render Typing Indicator
+  function appendTyping() {
+    var id = 'typing-' + Date.now();
+    var html = '<div id="' + id + '" style="display:flex;gap:8px;max-width:90%;margin-bottom:12px;">' +
+      '<div style="width:28px;height:28px;border-radius:50%;background:#eaf3fc;color:#1e5aa8;display:grid;place-items:center;flex-shrink:0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:block;"><rect x="3" y="11" width="18" height="10" rx="2"></rect><circle cx="12" cy="5" r="2"></circle><path d="M12 7v4M8 16h.01M16 16h.01"></path></svg></div>' +
+      '<div style="padding:10px 14px;border-radius:2px 10px 10px 10px;font-size:13px;background:#fff;border:1px solid #e2e6ec;color:#888;display:flex;align-items:center;gap:3px;">' +
+        '입력 중<span class="loading-dots"><span>.</span><span>.</span><span>.</span></span>' +
+      '</div>' +
+    '</div>';
+    msgArea.insertAdjacentHTML('beforeend', html);
+    msgArea.scrollTop = msgArea.scrollHeight;
+    return id;
+  }
+
+  function removeTyping(id) {
+    var el = document.getElementById(id);
+    if (el) el.remove();
+  }
+
+  // Initial welcome screen matching original UI
+  function appendInitialWelcome() {
+    var welcomeHtml = '안녕하세요! 씨에스캠 레이저 미세 가공기(Laser Texturing) 상담 챗봇입니다.<br>아래 항목을 선택하거나 궁금하신 점을 입력해 주세요.' +
+      '<div style="display:flex;flex-direction:column;gap:6px;margin-top:10px;">' +
+        '<button type="button" class="chatbot-opt-btn" onclick="selectChatbotOption(1, \'MLP 1000-5A(레이저 가공기) 스펙 문의\')">MLP 1000-5A(레이저 가공기) 스펙 문의</button>' +
+        '<button type="button" class="chatbot-opt-btn" onclick="selectChatbotOption(2, \'양산 실적 / 샘플 테스트 신청\')">양산 실적 / 샘플 테스트 신청</button>' +
+        '<button type="button" class="chatbot-opt-btn" onclick="selectChatbotOption(3, \'담당자 연결 (062-946-1900)\')">담당자 연결 (062-946-1900)</button>' +
+      '</div>';
+    appendBotMsg(welcomeHtml);
+  }
+
+  // Handle option selection
+  window.selectChatbotOption = function(optionIndex, text) {
+    appendUserMsg(text);
+    
+    // Disable all options buttons to prevent re-click
+    var buttons = document.querySelectorAll('.chatbot-opt-btn');
+    buttons.forEach(function(b) { b.disabled = true; });
+
+    var typingId = appendTyping();
+
+    setTimeout(function() {
+      removeTyping(typingId);
+      if (optionIndex === 1 || optionIndex === 2) {
+        chatState.category = (optionIndex === 1) ? 'MLP 1000-5A 스펙 문의' : '양산 실적 및 샘플 가공 문의';
+        chatState.step = 'name';
+        
+        appendBotMsg('선택해 주셔서 감사합니다! 관련 상세 제품 제안서 송부 및 맞춤 영업 기술 상담을 도와드리기 위해 먼저 고객님의 <strong>성함(회사명)</strong>을 아래 입력창에 작성해 주세요.');
+        
+        // Enable input field
+        inputField.disabled = false;
+        inputField.placeholder = '성함 또는 회사명을 입력하세요...';
+        inputField.focus();
+        submitBtn.disabled = false;
+        submitBtn.style.opacity = '1';
+      } else if (optionIndex === 3) {
+        chatState.step = 'complete';
+        appendBotMsg('씨에스캠 레이저 사업부 대표 유선망입니다.<br><br>• <strong>대표 전화</strong>: 062-946-1900<br>• <strong>상담 메일</strong>: info@cscam.co.kr<br>• <strong>상담 시간</strong>: 평일 08:30 ~ 17:30 (토/일/공휴일 휴무)<br><br>유선으로 연락 주시면 현장 전담 엔지니어를 신속히 연결해 드리겠습니다.');
+        appendRestartButton();
+      }
+    }, 600);
+  };
+
+  // Submit contact data step-by-step
+  window.handleChatbotSubmit = function(event) {
+    event.preventDefault();
+    var query = inputField.value.trim();
+    if (!query) return;
+
+    inputField.value = '';
+    appendUserMsg(query);
+
+    var typingId = appendTyping();
+
+    setTimeout(function() {
+      removeTyping(typingId);
+
+      if (chatState.step === 'name') {
+        chatState.name = query;
+        chatState.step = 'contact';
+        
+        appendBotMsg('감사합니다, ' + query + '님!<br>브로셔와 상세 시스템 스펙 제안서를 전송받으실 <strong>연락처(전화번호 또는 메일 주소)</strong>를 입력해 주세요.');
+        inputField.placeholder = '전화번호 또는 이메일을 입력하세요...';
+        inputField.focus();
+      } else if (chatState.step === 'contact') {
+        chatState.contact = query;
+        chatState.step = 'message';
+        
+        appendBotMsg('연락처가 등록되었습니다.<br>마지막으로 가공 타겟 소재(예: 스틸, 구리, 고분자 등) 또는 도입 희망 일정 등 <strong>상세 요구사항</strong>이 있으시면 입력해 주세요. (없으시다면 "없음" 입력)');
+        inputField.placeholder = '상세 요구사항을 입력하세요...';
+        inputField.focus();
+      } else if (chatState.step === 'message') {
+        chatState.message = query;
+        chatState.step = 'complete';
+        
+        // Save to localStorage
+        saveChatbotInquiry();
+
+        appendBotMsg('소중한 상담 요청이 접수되었습니다. 레이저 마이크로 패터닝 전담 기술 영업 엔지니어에게 관련 내용이 신속히 인계됩니다.<br><br>' +
+                     '• <strong>문의 구분</strong>: ' + chatState.category + '<br>' +
+                     '• <strong>성함/회사</strong>: ' + chatState.name + '<br>' +
+                     '• <strong>연락처</strong>: ' + chatState.contact + '<br>' +
+                     '• <strong>문의 내용</strong>: ' + chatState.message + '<br><br>' +
+                     '검토 후 평일 기준 24시간 이내에 메일 또는 유선으로 회신 드리겠습니다.');
+        
+        // Disable input
+        inputField.disabled = true;
+        inputField.placeholder = '접수가 성공적으로 완료되었습니다.';
+        submitBtn.disabled = true;
+        submitBtn.style.opacity = '0.6';
+
+        appendRestartButton();
+      }
+    }, 700);
+  };
+
+  // Save inquiry in localStorage
+  function saveChatbotInquiry() {
+    try {
+      var dataList = JSON.parse(localStorage.getItem('cscam_inquiries') || '[]');
+      dataList.push({
+        date: new Date().toLocaleString('ko-KR'),
+        category: chatState.category,
+        name: chatState.name,
+        contact: chatState.contact,
+        message: chatState.message
+      });
+      localStorage.setItem('cscam_inquiries', JSON.stringify(dataList));
+      console.log('CSCAM Engraving Inquiry Saved:', chatState);
+    } catch (e) {
+      console.error('Failed to save inquiry data', e);
+    }
+  }
+
+  // Restart dialogue
+  window.restartChatbot = function() {
+    chatState.step = 'init';
+    chatState.category = '';
+    chatState.name = '';
+    chatState.contact = '';
+    chatState.message = '';
+    
+    msgArea.innerHTML = '';
+    appendInitialWelcome();
+    
+    inputField.disabled = true;
+    inputField.placeholder = '메시지를 입력하세요 (준비 중)';
+    submitBtn.disabled = true;
+    submitBtn.style.opacity = '0.6';
+  };
+
+  function appendRestartButton() {
+    var html = '<div style="display:flex;justify-content:center;margin-top:10px;width:100%;">' +
+        '<button type="button" class="chatbot-opt-btn" onclick="restartChatbot()" style="text-align:center;font-weight:700;">처음 단계로 돌아가기</button>' +
+      '</div>';
+    msgArea.insertAdjacentHTML('beforeend', html);
+    msgArea.scrollTop = msgArea.scrollHeight;
+  }
+
+  // Load welcome bubble
+  appendInitialWelcome();
+})();
+
+// Dynamic Family Site Link Auto-Toggler
+document.addEventListener("DOMContentLoaded", function() {
+  const path = location.pathname;
+  
+  // Find GNB family links
+  const familyLinks = document.querySelectorAll(".family-bar-nav a, .drawer a");
+  
+  familyLinks.forEach(link => {
+    const text = link.textContent.trim().toUpperCase();
+    if (!text.includes("3D PRINTER") && !text.includes("LASER") && !text.includes("TEXTURING") && !text.includes("ENGRAVING") && !text.includes("MARKING")) {
+      return;
+    }
+    
+    const isAt3dp = path.includes("3dprinter");
+    const isAtEngraving = path.includes("engraving");
+    const isAtMarking = path.includes("marking");
+    
+    if (text.includes("3D PRINTER")) {
+      if (isAt3dp) {
+        link.href = "#heroSection";
+      } else {
+        link.href = "../../3dprinter/index.html";
+      }
+    } else if (text.includes("LASER") || text.includes("TEXTURING") || text.includes("ENGRAVING")) {
+      if (isAtEngraving) {
+        link.href = "#hero";
+      } else if (isAt3dp) {
+        link.href = "../machine/engraving/index.html";
+      } else {
+        link.href = "../engraving/index.html";
+      }
+    } else if (text.includes("MARKING")) {
+      if (isAtMarking) {
+        link.href = "#hero";
+      } else if (isAt3dp) {
+        link.href = "../machine/marking/index.html";
+      } else {
+        link.href = "../marking/index.html";
+      }
+    }
+  });
+});
+</script>
 </body>
 </html>
