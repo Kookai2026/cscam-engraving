@@ -380,7 +380,7 @@ footer{background:var(--bg-deep);border-top:1px solid var(--line-soft);padding:4
     <div class="family-bar-inner">
       <span class="family-bar-label">CSCAM 기계사업부</span>
       <nav class="family-bar-nav">
-        <a href="https://kookai2026.github.io/cscam-3dprinter/sites/3dprinter/">3D PRINTER</a>
+        <a href="https://kookai2026.github.io/cscam-3dprinter/">3D PRINTER</a>
         <a href="#hero" class="active">LASER PATTERNING</a>
         <a href="https://kookai2026.github.io/cscam-marking/" data-pending-verify="true">MARKING MACHINE</a>
         <span class="disabled">ETC</span>
@@ -420,7 +420,7 @@ footer{background:var(--bg-deep);border-top:1px solid var(--line-soft);padding:4
 <div class="drawer" id="drawer">
   <!-- Family Site Switcher for Mobile Drawer -->
   <div style="display:flex;flex-wrap:wrap;gap:6px;padding-bottom:20px;margin-bottom:20px;border-bottom:1px solid rgba(255,255,255,0.08);font-size:10.5px;font-weight:700;font-family:var(--ff-mono);">
-    <a href="https://kookai2026.github.io/cscam-3dprinter/sites/3dprinter/" style="padding:5px 12px;border-radius:12px;color:#94a3b8;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);">3D PRINTER</a>
+    <a href="https://kookai2026.github.io/cscam-3dprinter/" style="padding:5px 12px;border-radius:12px;color:#94a3b8;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);">3D PRINTER</a>
     <a href="#hero" onclick="toggleDrawer()" style="padding:5px 12px;border-radius:12px;color:#fff;background:var(--accent);">LASER PATTERNING</a>
     <a href="https://kookai2026.github.io/cscam-marking/" data-pending-verify="true" style="padding:5px 12px;border-radius:12px;color:#94a3b8;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);">MARKING MACHINE</a>
     <span style="padding:5px 12px;border-radius:12px;color:#4a5568;">ETC</span>
@@ -1245,45 +1245,17 @@ if('IntersectionObserver' in window){
   appendInitialWelcome();
 })();
 
-// Dynamic Family Site Link Auto-Toggler
+// Family site links are deployed as separate GitHub Pages repositories.
 document.addEventListener("DOMContentLoaded", function() {
-  const path = location.pathname;
-  
-  // Find GNB family links
   const familyLinks = document.querySelectorAll(".family-bar-nav a, .drawer a");
-  
   familyLinks.forEach(link => {
     const text = link.textContent.trim().toUpperCase();
-    if (!text.includes("3D PRINTER") && !text.includes("LASER") && !text.includes("TEXTURING") && !text.includes("ENGRAVING") && !text.includes("MARKING")) {
-      return;
-    }
-    
-    const isAt3dp = path.includes("3dprinter");
-    const isAtEngraving = path.includes("engraving");
-    const isAtMarking = path.includes("marking");
-    
     if (text.includes("3D PRINTER")) {
-      if (isAt3dp) {
-        link.href = "#heroSection";
-      } else {
-        link.href = "../../3dprinter/index.html";
-      }
+      link.href = "https://kookai2026.github.io/cscam-3dprinter/";
     } else if (text.includes("LASER") || text.includes("TEXTURING") || text.includes("ENGRAVING")) {
-      if (isAtEngraving) {
-        link.href = "#hero";
-      } else if (isAt3dp) {
-        link.href = "../machine/engraving/index.html";
-      } else {
-        link.href = "../engraving/index.html";
-      }
+      link.href = "#hero";
     } else if (text.includes("MARKING")) {
-      if (isAtMarking) {
-        link.href = "#hero";
-      } else if (isAt3dp) {
-        link.href = "../machine/marking/index.html";
-      } else {
-        link.href = "../marking/index.html";
-      }
+      link.href = "https://kookai2026.github.io/cscam-marking/";
     }
   });
 });
